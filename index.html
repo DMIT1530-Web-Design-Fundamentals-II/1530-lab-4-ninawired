@@ -6,7 +6,7 @@
     <title>remote.ly | Sign Up For Your Free Trial Today!</title>
 
     <!-- Website & Author Information -->
-    <meta name="author" content="...">
+    <meta name="Nina McAviney" content="Lab 4">
     <meta name="description" content="This lab demonstrates a responsive web signup form for a fictitious tech startup.">
 
     <!-- Google Fonts -->
@@ -18,6 +18,76 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
+    <div class="container">
+        <div class="bg-image"></div>
+        <div class="content-container">
+            <div class="logo">
+                <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M112.61 60A52.61 52.61 0 1 1 60 7.39 52.61 52.61 0 0 1 112.61 60Z" fill="#e5b261"/>
+                    <path d="M18.51 47.21L7.47 58.24c-.04.59-.07 1.17-.09 1.76C7.37 89.06 30.94 112.61 60 112.61c20.08 0 38.35-11.39 47.19-29.37L78.03 50.75 59.15 70.67Z" fill="#374456" fill-rule="evenodd"/>
+                    <circle cx="65.75" cy="49.75" r="6.79" fill="#fff59d"/>
+                    <path d="M50.12 34.12L9.52 74.72A52.61 52.61 0 0 0 60 112.61a52.61 52.61 0 0 0 50.86-39.4L84.15 46.5 76.23 60.23 50.12 34.12Z" fill="#374456" fill-rule="evenodd"/>
+                  </svg>              
+                <h1>remote.ly</h1>
+            </div>
+            <h2>Make every day 'bring your pet to work' day.</h2>
+            <p>Our award-winning platform lets you take your work on the go, wherever life may lead you. Sign up now to securely connect to clients, no matter where you are.</p>
+            <div class="form">
+                <span class="cta">Try it free for 7 days, with plans starting at $25/month.</span>
+                <form action="" method="post">  
+                    <section class="content">
+                        <h3>Your Account</h3>
+                        <section class="fields">
+                            <div class="input-box">
+                                <label for="username">Username</label>
+                                <input type="text" name="username" required>
+                            </div>
+                            <div class="input-box">
+                                <label for="email">Email Address</label>
+                                <input type="email" name="email" required>
+                            </div>
+                            <div class="input-box">
+                                <label for="password">Password</label>
+                                <input type="password" name="password" required>
+                                <p>Your password must contain at least one uppercase letter, one lowercase letter, and one number.</p>
+                            </div>
+                            <div class="input-box">
+                                <label for="password-confirm">Password (Again!)</label>
+                                <input type="password" name="password-confirm" required>
+                            </div>
+                        </section>
+                        <h3>All About You</h3>
+                        <section class="fields">
+                            <div class="input-box">
+                                <label for="first-name">First Name</label>
+                                <input type="text" name="first-name" required>
+                            </div>
+                            <div class="input-box">
+                                <label for="last-name">Last Name</label>
+                                <input type="text" name="last-name" required>
+                            </div>
+                            <div class="date input-box">
+                                <label for="birthdate">Date of Birth</label>
+                                <input type="date" placeholder="mm/dd/yyyy" name="birthdate" required>
+                            </div>
+                            <div class="dropdown input-box">
+                                <label for="business-type">Business Type</label>
+                                <select>
+                                    <option>Sole Proprietorship</option>
+                                    <option>Partnership</option>
+                                    <option>Limited Liability Company</option>
+                                    <option>Corporation</option>
+                                </select>
+                            </div>          
+                        </section>
+                        <button type="submit">Claim Your Free Trial <span class="arrow">&#10148;</span></button>
+                        <div class="alert">
+                            <p>By clicking Sign Up, you agree to out <a href="#">Terms of Service </a> and <a href="#">Privacy Policy.</a></p>
+                        </div>
+                    </div>               
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
